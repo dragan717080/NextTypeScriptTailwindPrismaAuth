@@ -51,7 +51,6 @@ GOOGLE_CLIENT_SECRET=YOUR_GOOGLE_CLIENT_SECRET
 
 4. Run `npm run dev`
 
-## Customize App
+## Customize the app
 
-Customize App to suit your needs!
-
+Customize the app to suit your needs!
