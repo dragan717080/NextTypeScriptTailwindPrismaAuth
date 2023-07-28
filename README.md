@@ -1,34 +1,57 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Boilerplate code for Next.js using TypeScript, Tailwind CSS, MongoDB, NextAuth.js, and Prisma
 
-## Getting Started
+## Technologies Used
 
-First, run the development server:
+- **Next.js**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+Next.js is a React framework for building modern web applications. It provides server-side rendering (SSR) and static site generation (SSG) capabilities, resulting in faster page loads and improved SEO. Next.js simplifies the development process and offers features like automatic code splitting, routing, and hot module replacement.
+
+- **TypeScript**
+
+TypeScript is a strongly typed superset of JavaScript that enhances code maintainability and scalability. It allows us to catch errors during development and provides better tooling support, leading to more robust applications.
+
+- **Tailwind CSS**
+
+Tailwind CSS is a utility-first CSS framework that enables rapid UI development. Its utility classes make it easy to create responsive and custom-designed user interfaces without writing custom CSS.
+
+- **MongoDB**
+
+MongoDB is a NoSQL database that provides flexibility and scalability. It stores data in JSON-like documents, allowing us to work with complex data structures and adapt quickly to changing requirements.
+
+- **NextAuth.js**
+
+NextAuth.js is an authentication library for Next.js applications. It supports various authentication providers like OAuth, JWT, and credentials-based authentication, making it easy to implement secure user authentication and authorization.
+
+- **Prisma**
+
+Prisma is an innovative database toolkit that simplifies database access and management. It provides a type-safe and intuitive way to interact with the database using a powerful ORM (Object-Relational Mapping) layer.
+
+The goal of using these technologies is to create a high-performing, modern and scalable application.
+
+Please refer to the respective documentation of each technology for more in-depth details and usage instructions.
+
+## How to use
+
+1. Register your app at Github and Google
+
+2. Create `.env` file in root directory, and put corresponding variables:
+
+```
+DATABASE_URL=YOUR_MONGO_ATLAS_DATABASE_URL
+NEXTAUTH_SECRET="secret"
+
+GITHUB_ID=YOUR_GITHUB_CLIENT_ID
+GITHUB_SECRET=YOUR_GITHUB_CLIENT_SECRET
+
+GOOGLE_CLIENT_ID=YOUR_GOOGLE_CLIENT_ID
+GOOGLE_CLIENT_SECRET=YOUR_GOOGLE_CLIENT_SECRET
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Run `npm install`
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+4. Run `npm run dev`
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Customize App
 
-## Learn More
+Customize App to suit your needs!
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
