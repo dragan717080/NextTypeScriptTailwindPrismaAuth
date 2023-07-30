@@ -2,8 +2,6 @@
 import { FC, useEffect } from 'react';
 import Image from 'next/image';
 import { useSession } from 'next-auth/react';
-import Toolbar from './Toolbar';
-import toolbarContent from '../../constants/ToolbarContent';
 import { MagnifyingGlassIcon, GlobeAltIcon, UserCircleIcon, UsersIcon } from '@heroicons/react/24/outline';
 import { useRouter } from 'next/navigation';
 import { signOut } from 'next-auth/react';
@@ -36,7 +34,7 @@ const Header: FC = () => {
       <div className='flex just row-end items-center space-x-4 text-gray-500'>
         {session.status === 'authenticated'
           ? <div className='inline-flex'>
-            <div className='t-red'>{session.data.user.name}</div>
+            <div className='t-red'>{session.data!.user!.name}</div>
             <button className='t-cornflowerblue ml-3' onClick={async () => await signOut()} >Logout</button>
           </div>
           : <a href='auth'>Login</a>

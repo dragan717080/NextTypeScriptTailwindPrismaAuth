@@ -1,4 +1,5 @@
 import './globals.css';
+import './styles/animations.css';
 import { ReactNode } from 'react';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
@@ -20,6 +21,7 @@ export default function RootLayout({
 }) {
 
   // For default font: <body className={inter.className}>
+  // If need to use Redux, move components after ToasterContext into page.tsx
 
   return (
     <html lang="en">
