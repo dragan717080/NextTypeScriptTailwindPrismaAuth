@@ -54,24 +54,6 @@ body {
     background-color: #f75239;
 }
 
-.t-logo,
-.hover-logo:hover {
-    color: rgba(247, 82, 57, 0.7);
-}
-
-.tag-card {
-    height: 26rem;
-}
-
-.tag-card img {
-    height: 22rem;
-    width: 17rem;
-}
-
-.tag-title {
-    width: 70%;
-}
-
 .bg-img {
     @apply bg-cover bg-no-repeat bg-center;
 }
